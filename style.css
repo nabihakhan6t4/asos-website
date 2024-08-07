@@ -72,3 +72,22 @@ body {
   color: white;
   background: #2d2d2d;
 }
+.logo-white {
+  filter: invert(1);
+}
+.hover-effect-of-border:hover {
+  background: #474747;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.border-hover:hover {
+  padding: 10px 15px;
+  border: 1px solid white;
+}
+
+.border-hover:focus {
+  padding: 10px 15px;
+  border: 1px solid white;
+}
