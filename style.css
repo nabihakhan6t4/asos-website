@@ -1,10 +1,10 @@
 @font-face {
   font-family: "futura";
-  src: url(fonta/FuturaCyrillicMedium.ttf);
+  src: url(fonts/FuturaCyrillicMedium.ttf);
 }
 
 body {
-  font-family: "futura";
+  font-family: "futura", sans-serif;
   height: 100vh;
 }
 
@@ -72,12 +72,15 @@ body {
   color: white;
   background: #2d2d2d;
 }
+
 .logo-white {
   filter: invert(1);
 }
+
 .hover-effect-of-border:hover {
   background: #474747;
 }
+
 .cursor {
   cursor: pointer;
 }
@@ -90,4 +93,42 @@ body {
 .border-hover:focus {
   padding: 10px 15px;
   border: 1px solid white;
+}
+
+.btn-custom {
+  background: #fff;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-custom:hover {
+  color: white;
+  background: #000;
+}
+.custom-css-to-hide {
+  display: none;
+}
+.bg-custom {
+  background: #2d2d2d;
+}
+.visiblity-custom {
+  visibility: hidden;
+}
+ul {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+}
+.icon-gap {
+  margin-right: 12px; /* Use a smaller margin */
+}
+.navbar {
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+@media  screen and (min-width:48px)  {
+  .logo-white {
+    width: 50px;
+    width: 50px;
+    margin-left: 20px;
+  }
 }

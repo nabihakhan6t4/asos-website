@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- header-start -->
-    <nav class="py-2 bg-body-tertiary border-bottom">
+    <nav class="py-2 bg-body-tertiary border-bottom custom-css-to-hide">
       <div class="container d-flex flex-wrap">
         <ul class="nav me-auto custom-styling">
           <li class="nav-item">
@@ -69,7 +69,7 @@
         </ul>
       </div>
     </nav>
-    <header class="p-3 mb-3 border-bottom bg fw-bold">
+    <header class="p-3 mb-3 border-bottom bg fw-bold custom-css-to-hide">
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
@@ -116,6 +116,11 @@
             class="d-flex align-items-center gap-4 text-white list-unstyled nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
           >
             <li class="border-hover">
+              <a href=""
+                ><i class="fa-solid fa-magnifying-glass text-white fs-3"></i
+              ></a>
+            </li>
+            <li class="border-hover">
               <a href=""><i class="fa-regular fs-3 text-white fa-user"></i></a>
             </li>
             <li class="border-hover">
@@ -130,8 +135,221 @@
         </div>
       </div>
     </header>
+    <!-- small-devices-header-start-480 -->
+    <!-- small-devices-header-start-480 -->
+    <nav
+      class="navbar navbar-expand-lg bg-custom navbar-dark rounded"
+      aria-label="Thirteenth navbar example"
+    >
+      <div class="container-fluid d-flex align-items-center">
+        <button
+          class="navbar-toggler collapsed fs-6"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a
+          href="/"
+          class="d-flex align-items-center mb-lg-0 link-body-emphasis text-decoration-none"
+        >
+          <img src="images/logo.svg" class="logo-white" alt="ASOS Logo" />
+        </a>
+
+        <form
+          class="w-50 me-auto search-container visiblity-custom"
+          role="search"
+          id="display"
+        >
+          <input
+            type="search"
+            class="form-control rounded-5 border"
+            placeholder="Search for items and brands"
+            aria-label="Search"
+          />
+          <button>
+            <img src="images/search.svg" alt="" />
+          </button>
+        </form>
+
+        <div
+          class="d-flex align-items-center justify-content-center custom-gap g-5 text-white"
+          style="flex: 1"
+        >
+          <ul class="list-unstyled mb-0 d-flex" style="flex-wrap: nowrap">
+            <li class="icon-gap">
+              <a href="" >
+                <i class="fa-solid fa-magnifying-glass text-white " id="search-icon" onclick="formDisplay(event)"></i>
+              </a>
+            </li>
+            <li class="icon-gap hover--styling">
+              <a href="">
+                <i class="fa-regular fs-sm-2 text-white fa-user"></i>
+              </a>
+            </li>
+            <li class="icon-gap">
+              <a href="">
+                <i class="fa-regular fs-sm-2 text-white fa-heart"></i>
+              </a>
+            </li>
+            <li class="icon-gap">
+              <a href="">
+                <i class="fa-solid fs-sm-2 text-white fa-bag-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <button class="btn btn-primary">Button</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- small-devices-header-end -->
+
+    <!-- small-devices-header-end -->
 
     <!-- header-end -->
+
+    <!-- hero-section-start -->
+    <div class="carousel-inner container">
+      <div class="carousel-item"></div>
+      <div class="carousel-item active">
+        <!-- Make sure this item is active to be shown first -->
+        <img src="images/hero-section.webp" alt="Hero Image" />
+        <div class="container">
+          <div class="carousel-caption d-flex justify-content-center gap-5">
+            <p><a class="btn btn-lg btn-custom" href="#">Shop Womens</a></p>
+            <p><a class="btn btn-lg btn-custom" href="#"> Shop Mens</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero-section-end -->
+    <!-- card-section-start -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a
+            href="link-to-product-page.html"
+            class="text-decoration-none text-dark bg-custom-yellow"
+          >
+            <div
+              class="card text-center bg-custom-yellow fs-3"
+              style="width: 18rem"
+            >
+              <img
+                src="path/to/image.jpg"
+                class="card-img-top"
+                alt="Product Image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  New here? <br />Get your first-timer discount
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a
+            href="link-to-product-page.html"
+            class="text-decoration-none text-dark bg-custom-yellow"
+          >
+            <div
+              class="card text-center bg-custom-yellow fs-3"
+              style="width: 18rem"
+            >
+              <img
+                src="path/to/image.jpg"
+                class="card-img-top"
+                alt="Product Image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  New here? <br />Get your first-timer discount
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <div
+            class="card text-center d-flex justify-content-center fs-3"
+            style="width: 18rem"
+          >
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                New here? <br />Get your first-timer discount
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <a
+            href="link-to-product-page.html"
+            class="text-decoration-none text-dark bg-custom-yellow"
+          >
+            <div
+              class="card text-center bg-custom-yellow fs-3"
+              style="width: 18rem"
+            >
+              <img
+                src="path/to/image.jpg"
+                class="card-img-top"
+                alt="Product Image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  New here? <br />Get your first-timer discount
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- card-section-end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
